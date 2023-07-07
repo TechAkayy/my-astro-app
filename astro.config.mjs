@@ -1,8 +1,18 @@
-import { defineConfig } from 'astro/config';
-import vue from '@astrojs/vue';
+import { defineConfig } from 'astro/config'
+import vue from '@astrojs/vue'
+import Pinegrow from '@pinegrow/astro-module'
 
 // https://astro.build/config
 export default defineConfig({
-	// Enable Vue to support Vue components.
-	integrations: [vue()],
-});
+  integrations: [
+    vue(),
+    Pinegrow({
+      liveDesigner: {
+        experimental: {
+          metaFrameworks: ['astro'],
+        },
+      },
+      // ...
+    }),
+  ],
+})

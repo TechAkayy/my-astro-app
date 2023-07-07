@@ -13,5 +13,8 @@
     "@astrojs/vue": "^2.2.1",
     "astro": "^2.8.0",
     "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@pinegrow/astro-module": "^3.0.1"
   }
 }
